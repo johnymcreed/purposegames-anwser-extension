@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "version": "1.07",
+    
+    "author": "asp",
+    "name": "EXTENSION TESTER",
+    "description": "Go to steam sign up and let it do basically all the work for you.",
+    "icons": { "16": "logo.png" },
+
+    "permissions": [ "activeTab", "tabs", "storage" ],
+
+    "content_scripts": [{
+        "js": [ "thirdparty/jquery.js", "script.js" ],
+        "run_at": "document_end",
+        "matches": [ "https://www.purposegames.com/game/organelles-of-animal-cells-rnths-preap-bio" ]
+    }]
+}
